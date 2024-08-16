@@ -1,0 +1,49 @@
+body {
+    border-radius: 10px;
+    height: 100%;
+    background-color: #201b1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html {
+    height: 100%;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+div.download_images {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.container {
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    margin-inline: 25px;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #272727(0, 0, 0, 0.2);
+}
+
+
+h2 {
+    position: absolute;
+    top: 300px;
+    display: inline-flex;
+    justify-content: center;
+    margin-inline: 50px;
+}
+a, a:visited {
+    text-decoration: none;
+}
