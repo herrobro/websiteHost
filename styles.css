@@ -122,6 +122,14 @@ div.countdisplay {
 }
 
 @media screen and (max-width: 1000px) {
+    h1 {
+        position: absolute;
+        display: flex;
+        left: 50%;
+        top: 1px;
+        scale: 90%;
+        transform: translateX(-50%);
+    }
     h2 {
         height: 50%;
         width: auto;
@@ -134,7 +142,12 @@ div.countdisplay {
     }
     div.download_images {
         display: block;
-        height: 0%;
-        margin: 50%;
+        left: 0;
+        margin: auto;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+        transition: all linear 1s;
+        opacity:
     }
 } 
