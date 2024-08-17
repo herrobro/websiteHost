@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
     border-radius: 10px;
     height: 100%;
@@ -12,21 +13,24 @@ html {
 
 h1 {
     position: absolute;
-    top: 20px;
+    height: 95%;
     display: flex;
     justify-content: center;
 
 }
 
 div.download_images {
+    width: 100%;
+    text-align: center;
     border-radius: 10px;
     display: flex;
     justify-content: center;
+    height: 50%;
     align-items: center;
 }
 div.container {
+    text-align: center;
     border-radius: 10px;
-    display: inline-flex;
     align-items: center;
     margin-inline: 25px;
 }
@@ -39,7 +43,7 @@ img {
 
 h2 {
     position: absolute;
-    top: 300px;
+    height: 50%;
     display: inline-flex;
     justify-content: center;
     margin-inline: 50px;
@@ -47,3 +51,58 @@ h2 {
 a, a:visited {
     text-decoration: none;
 }
+
+#player-count {
+    display: block;
+    color: green;
+}
+
+#playerMax {
+    display: block;
+    color: green;
+}
+
+p {
+    color: white;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.kanit-semibold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+span {
+    font-family: 'Kanit', sans-serif;
+
+}
+div.servercount {
+    display: flex;
+    justify-content: center;
+    color: green;
+    border-style: solid;
+    border: white;
+}
+div.countdisplay {
+    display: inline-flex;
+}
+
+@media screen and (max-width: 1000px) {
+    h2 {
+        height: 50%;
+        width: auto;
+        display: inline-block;
+    }
+    #youtube-logo {
+        display: flex;
+        left: 50%;
+        justify-content: center;
+    }
+    div.download_images {
+        display: block;
+        height: 0%;
+        margin: 50%;
+    }
+} 

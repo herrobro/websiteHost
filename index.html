@@ -6,8 +6,16 @@
     <title>Herro's Links and Modpacks</title>
     <link rel="icon" href="/images/HerroLogo.png"/>
     <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="serverping.js"></script>
+    <script type="text/javascript" src="serverping2.js"></script>
   </head>
   <body>
+    <script language="javascript">
+      serverping.js();
+    </script>
+    <script language="javascript">
+      serverping2.js();
+    </script>
     <h1>
       <img
         src="/images/HerroLogo.png"
@@ -42,7 +50,7 @@
             alt="X Link (Twitter)"
           />
         </a>
-        <a href="https://www.youtube.com/@destinyherro7743" target="_blank">
+        <a  id="youtube-logo" href="https://www.youtube.com/@destinyherro7743" target="_blank">
           <img
             src="/images/youtube-logo.png"
             height="125"
@@ -55,16 +63,24 @@
     <div class="download_images">
       <div class="container">
         <a href="/modpackDL/Cobblemon For Boyz and Goilz 1.0.0.mrpack" download>
-          <img
-            src="/images/cobblemonlink.png"
-            height="250"
-            width="500"
-            alt="Cobblemon Logo"
-          />
+
+            <img
+              src="/images/cobblemonlink.png"
+              height="250"
+              width="500"              
+              alt="Cobblemon Logo"
+            />
         </a>
+        <div class="servercount">
+          <div class="countdisplay">
+            
+            <span id="player-count"></span> / <span id="playerMax"></span><p>Players Online</p>
+          </div>
+        </div>
       </div>
       <div class="container">
         <a href="https://www.dropbox.com/scl/fi/lrgq80aoz7ysx8l1ruert/additions.zip?rlkey=30eh6ckmgac1p8ogg6b3u90f0&st=hobwr4hk&dl=1">
+          
           <img
             src="/images/projectarchitectlink.png"
             height="250"
@@ -72,7 +88,14 @@
             alt="Architect Logo"
           />
         </a>
+        <div class="servercount">
+          <div class="countdisplay">
+            
+            <span id="player-countarchitect"></span> / <span id="playerMaxarchitect"></span><p>Players Online</p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
 </html>
+
