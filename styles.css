@@ -40,6 +40,15 @@ img {
     box-shadow: 2px 2px 4px #272727(0, 0, 0, 0.2);
 }
 
+.modloaderImage {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: -800px;
+}
+
 
 h2 {
     position: absolute;
@@ -148,6 +157,9 @@ div.countdisplay {
     .dropdown:hover .dropdown-content {
         display: block;
         transition: all linear 1s;
-        opacity:
+        opacity: 1;
+    }
+    .modloaderImage {
+        bottom: -900px;
     }
 } 
