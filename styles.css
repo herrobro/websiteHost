@@ -20,18 +20,16 @@ h1 {
 }
 
 div.download_images {
-    width: 100%;
-    text-align: center;
-    border-radius: 10px;
     display: flex;
+    width: 100%;
     justify-content: center;
-    height: 50%;
     align-items: center;
 }
 div.container {
-    text-align: center;
+    display: inline-flex;
     border-radius: 10px;
     align-items: center;
+    justify-content: center;
     margin-inline: 25px;
 }
 
@@ -160,6 +158,6 @@ div.countdisplay {
         opacity: 1;
     }
     .modloaderImage {
-        bottom: -950px;
+        bottom: -1050px;
     }
 } 
