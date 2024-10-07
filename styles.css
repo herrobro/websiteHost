@@ -6,6 +6,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 html {
     height: 100%;
@@ -21,16 +24,19 @@ h1 {
 
 div.download_images {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
 }
 div.container {
     display: inline-flex;
+    flex-wrap: wrap;
     border-radius: 10px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin-inline: 25px;
+    margin-right: auto;
 }
 
 img {
@@ -42,9 +48,9 @@ img {
     position: absolute;
     height: 100%;
     width: 100%;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
-    bottom: -800px;
+    bottom: -1150px;
 }
 
 
