@@ -1,119 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
-    border-radius: 10px;
-    height: 100%;
     background-color: #201b1a;
+    height: calc(100vh - 100px);
+    display: flex;
+    gap: 20px;
     justify-content: center;
     align-items: center;
-    display: flex;
-    margin-left: auto;
-    
-}
-html {
-    height: 100%;
-}
-
-h1 {
-    position: absolute;
-    height: 95%;
-    display: flex;
-    justify-content: center;
-}
-
-.download_images {
+    align-content: center;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-}
-.container {
-    display: inline-flex;
     border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    margin-inline: 25px;
-    margin-right: auto;
+    color: green;
+}
+.download_images {
+    border-radius: 10px;
+    border-style: solid;
+    height: 125px;
+    width: 250px;
+    width: 100%;
+    object-fit: cover;
     transition: 150ms ease;
 }
 
-.container:hover {
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+text {
+    color: green;
+}
+
+#container {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: aliceblue;
+    transition: 150ms ease;
+}
+
+#container:hover {
     scale: 1.2;
+}
+
+#container:hover > #countdisplay {
+    display: flex;
+    opacity: 1.0;
+    align-items: center;
+    transition: 1000ms ease;
+}
+
+#modloadercontainer {
+    display: block;
+    border-style: solid;
+    border-color: aliceblue;
+    border-radius: 10px;
+    transition: 150ms ease;
+}
+
+#modloadercontainer:hover {
+    scale: 1.2;
+}
+
+#countdisplay {
+    position: absolute;
+    top: 210px;
+    left: 10px;
+    opacity: 0.0;
 }
 
 img {
     border-radius: 10px;
-    box-shadow: 2px 2px 4px #272727(0, 0, 0, 0.2);
 }
 
-.modloaderImage {
+h1 {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    display: inline-flex;
-    justify-content: center;
-    bottom: -1150px;
-    transition: 150ms ease;
-}
-
-.modloaderImage:hover {
-    scale: 1.2;
-}
-
-h2 {
-    position: absolute;
-    height: 50%;
-    display: inline-flex;
-    justify-content: center;
-    margin-inline: 50px;
+    top: 1%;
 }
 a, a:visited {
     text-decoration: none;
 }
-
-#player-count {
-    display: block;
-    color: green;
-}
-
-#playerMax {
-    display: block;
-    color: green;
-}
-
-p {
-    color: white;
-    font-family: 'Kanit', sans-serif;
-
-}
-
-.kanit-semibold {
-    font-family: "Kanit", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-span {
-    font-family: 'Kanit', sans-serif;
-
-}
-div.servercount {
-    display: flex;
-    justify-content: center;
-    color: green;
-    border-style: solid;
-    border: white;
-}
-div.countdisplay {
-    display: inline-flex;
-}
-
 .dropdown {
     position: relative;
 
     display: inline-block;
     transition: 150ms ease;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -126,14 +96,12 @@ div.countdisplay {
     z-index: 1;
     transition: 150ms ease;
 }
-
 .dropdown-content a {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     transition: 150ms ease;
 }
-
 .dropdown:hover .dropdown-content {
     display: flex;
     left: 50%;
@@ -142,36 +110,20 @@ div.countdisplay {
     opacity: 1;
 }
 
-@media screen and (max-width: 1000px) {
+p {
+    color: aliceblue;
+}
+
+@media (max-width: 950px) {
     h1 {
-        position: absolute;
-        display: flex;
-        left: 50%;
-        top: 1px;
-        scale: 90%;
-        transform: translateX(-50%);
-    }
-    h2 {
-        height: 50%;
-        width: auto;
-        display: inline-block;
-    }
-    #youtube-logo {
-        display: flex;
-        left: 50%;
-        justify-content: center;
-    }
-    div.download_images {
-        display: block;
-        left: 0;
-        margin: auto;
+        position: relative;
     }
     .dropdown:hover .dropdown-content {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        left: 50%;
+        transform: translateX(-50%);
         transition: all linear 1s;
         opacity: 1;
     }
-    .modloaderImage {
-        bottom: -1050px;
-    }
-} 
+}

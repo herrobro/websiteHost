@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Herro's Links and Modpacks</title>
-    <link rel="icon" href="/images/HerroLogo.png"/>
-    <link rel="stylesheet" href="styles.css" />
-    <script type="text/javascript" src="serverping.js"></script>
-    <script type="text/javascript" src="serverping2.js"></script>
-  </head>
-  <body>
-    <script language="javascript">
-      serverping.js();
-    </script>
-    <script language="javascript">
-      serverping2.js();
-    </script>
-    <h1>
-      <div class="header">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herro's Links and Modpacks</title>
+  <link rel="icon" href="/images/HerroLogo.png"/>
+  <script type="text/javascript" src="serverping.js"></script>
+  <script type="text/javascript" src="serverping2.js"></script>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <script language="javascript">
+    serverping.js();
+  </script>
+  <script language="javascript">
+    serverping2.js();
+  </script>
+  <h1>
+    <div class="header">
       <div class="dropdown">
         <img class="dropbtn"
           src="/images/HerroLogo.png"
@@ -61,126 +61,57 @@
         </div>
       </div>
       </div>
-    </h1>
-    <h2>
-      <!--<div class="socials">
-        <a href="https://discord.gg/pYECmAA" target="_blank">
-          <img
-            src="/images/discord-logo.png"
-            height="125"
-            width="125"
-            alt="Discord Link"
-          />
-        </a>
-        <a href="https://www.twitch.tv/destinyherro" target="_blank">
-          <img
-            src="/images/twitch.png"
-            height="125"
-            width="125"
-            alt="Twitch Link"
-          />
-        </a>
-        <a href="https://x.com/DestinyofHerro" target="_blank">
-          <img
-            src="/images/xlogo.png"
-            height="125"
-            width="125"
-            alt="X Link (Twitter)"
-          />
-        </a>
-        <a  id="youtube-logo" href="https://www.youtube.com/@destinyherro7743" target="_blank">
-          <img
-            src="/images/youtube-logo.png"
-            height="125"
-            width="125"
-            alt="Youtube Link"
-          />
-        </a>
-      </div>-->
-    </h2>
-    <div class="download_images">
-      <div class="container">
-        <a href="/modpackDL/Cobblemon For Boiz and Goilz 1.0.4.mrpack" download>
-
-            <img
-              src="/images/cobblemonlink.png"
-              height="250"
-              width="500"             
-              alt="Cobblemon Logo"
-            />
-        </a>
-        <div class="servercount">
-          <div class="countdisplay">
-            
-            <span id="player-count"></span> / <span id="playerMax"></span><p>Players Online</p>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <a href="https://www.dropbox.com/scl/fi/lrgq80aoz7ysx8l1ruert/additions.zip?rlkey=30eh6ckmgac1p8ogg6b3u90f0&st=hobwr4hk&dl=1">
-          
-          <img
-            src="/images/projectarchitectlink.png"
-            height="250"
-            width="500"
-            alt="Architect Logo"
-          />
-        </a>
-        <div class="servercount">
-          <div class="countdisplay">
-            
-            <span id="player-countarchitect"></span> / <span id="playerMaxarchitect"></span><p>Players Online</p>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <a href="https://www.dropbox.com/scl/fi/txvfg3kmfdzdfgwli4hvk/pixelmontestmodpack.mrpack?rlkey=iupwpt52wy9e9kgklto2kz1ma&st=a589ijvw&dl=1" download>
-
-            <img
-              src="/images/pixelmontestserver.png"
-              height="250"
-              width="500"       
-              alt="Pixelmon Server Pack"
-            />
-        </a>
-        <div class="servercount">
-          <div class="countdisplay">
-            
-            <span id="player-countarchitect"></span> / <span id="playerMaxarchitect"></span><p>Players Online</p>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="container">
-        <a href="https://cloud.playwithherro.com/s/mDB4ckWPoe7oHBw/download/mods.zip" download>
-
-            <img
-              src="/images/craftoriaserverimage.png"
-              height="250"
-              width="500"            
-              alt="Craftoria Server Pack"
-            />
-        </a>
-        <div class="servercount">
-          <div class="countdisplay">
-            
-            <span id="player-countarchitect"></span> / <span id="playerMaxarchitect"></span><p>Players Online</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modloaderImage">
-      <div class="modloadercontainer">
-        <a href="/modloader.html">
-          <img 
-            src="/images/modloaderPage.png"
-            height="250"
-            width="500"
-            alt="ModLoader Page Image"
-          />
-        </a>
-      </div>
-    </div>
-  </body>
+  </h1>
+  <div id="container" class="downloadimages"> 
+    <a href="/modpackDL/Cobblemon For Boiz and Goilz 1.0.4.mrpack" download>
+      <img
+        src="/images/cobblemonlink.png"
+        alt="Cobblemon Logo"
+      />
+    </a> 
+    <div id="countdisplay" class="servercount">
+      <span id="player-count"></span> / <span id="playerMax"></span>&nbsp;<p>Players Online</p>
+    </div>   
+  </div>
+  <div id="container" class="downloadimages">
+    <a href="https://www.dropbox.com/scl/fi/lrgq80aoz7ysx8l1ruert/additions.zip?rlkey=30eh6ckmgac1p8ogg6b3u90f0&st=hobwr4hk&dl=1">
+      <img
+        src="/images/projectarchitectlink.png"
+        alt="Architect Logo"
+      />
+    </a>
+  </div>
+  <div id="container" class="downloadimages">
+    <a href="https://www.dropbox.com/scl/fi/txvfg3kmfdzdfgwli4hvk/pixelmontestmodpack.mrpack?rlkey=iupwp=1">
+      <img
+        src="/images/pixelmontestserver.png"
+        alt="Pixelmon Server Pack"
+      />
+    </a>
+  </div>
+  <div id="container" class="downloadimages">
+    <a href="https://cloud.playwithherro.com/s/mDB4ckWPoe7oHBw/download/mods.zip" download>
+      <img
+        src="/images/craftoriaserverimage.png"
+        alt="Craftoria Server Pack"
+      />
+    </a>
+    <div id="countdisplay" class="servercount">
+      <span id="player-countcraftoria"></span> / <span id="playerMaxcraftoria"></span>&nbsp;<p>Players Online</p>
+    </div>   
+  </div>
+  </div>
+  <div class="break">
+  </div>
+  <div id="modloadercontainer" class="modloaderImage">
+    <a href="/modloader.html">
+      <img
+        src="/images/modloaderPage.png"
+        height="250"
+        width="500"
+        alt="Modloader Page Image"
+      />
+    </a>
+  </div>
+</body>
 </html>
-

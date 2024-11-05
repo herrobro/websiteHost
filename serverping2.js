@@ -9,12 +9,12 @@ function initServerData(serverIp, serverPort){
             console.log(data.error);
             return false;
         }
-        const playerCounter = document.getElementById("player-countarchitect");
+        const playerCounter = document.getElementById("player-countcraftoria");
         playerCounter.innerHTML = data.players.now;
 
-        const playerMax = document.getElementById("playerMaxarchitect");
+        const playerMax = document.getElementById("playerMaxcraftoria");
         playerMax.innerHTML = data.players.max;
 
     }
 }
-initServerData("76.144.24.144", "25570");
+initServerData("amp.playwithherro.com", "25589");
