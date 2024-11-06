@@ -50,6 +50,13 @@ text {
     transition: 1000ms ease;
 }
 
+#container:hover > #serverAddress {
+    display: flex;
+    opacity: 1.0;
+    align-items: center;
+    transition: 1000ms ease;
+}
+
 #modloadercontainer {
     display: block;
     border-style: solid;
@@ -66,6 +73,13 @@ text {
     position: absolute;
     top: 210px;
     left: 10px;
+    opacity: 0.0;
+}
+
+#serverAddress {
+    position: absolute;
+    top: 210px;
+    right: 10px;
     opacity: 0.0;
 }
 
