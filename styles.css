@@ -83,6 +83,14 @@ text {
     opacity: 0.0;
 }
 
+#ipParagraph {
+    color: crimson;
+}
+
+#addressParagraph {
+    text-decoration: underline;
+}
+
 img {
     border-radius: 10px;
 }
